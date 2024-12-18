@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despesas Periodo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <!--Área de controle dos botões-->
+        <div class="controls">
+            <button id="btn1">Despesas</button>
+            <button id="btn2">Despesas Periodo</button>
+        </div>
+        <!--Painel de exibição de despesas-->
+        <div class="painel despesas active">
+            <div class="resume">
+                <div>
+                    Entrada: R$
+                    <span class="incomes">0.00</span>
+                </div>
+                <div>
+                    Saídas: R$
+                    <span class="expenses">0.00</span>
+                </div>
+                <div>
+                    Total: R$
+                    <span class="total">0.00</span>
+                </div>
+            </div>
+            <!--Area de filtrar o mês-->
+            <div class="divTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="columnDescription">Descrição</th>
+                            <th class="columnAmount">Valor</th>
+                            <th class="columnType">Tipo</th>
+                            <th class="columnDate">Data</th>
+                            <th class="columnAction"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <!--Informações do usuário-->
+            <div class="usuario">
+                <label id="nome-usuario">Usuario</label>
+                <button id="btn_sair">Sair</button>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
