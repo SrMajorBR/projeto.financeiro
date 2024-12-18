@@ -5,6 +5,7 @@ const type = document.querySelector("#type");
 const data = document.querySelector("#data");
 const btnNew = document.querySelector("#btnNew");
 
+import { setItensBD, getItensBD, Sair, loadItens} from "../Controllers/funcoes.js";
 //Botão sair
 document.querySelector("#btn_sair").addEventListener("click", () => {
     Sair();
@@ -15,9 +16,9 @@ btnNew.onclick = () => {
 
     const itens = getItensBD();
 
-//Verifica se todos os campos foram preenchidos
-    if(descItem.value === "" || amount.value === "" || type.value === "" || data.value === "") {
-        return alet ("Preencha todos os campos!");
+    //Verifica se todos os campos foram preenchidos
+    if (descItem.value === "" || amount.value === "" || type.value === "" || data.value === "") {
+        return alet("Preencha todos os campos!");
     }
     //Adicionadno novo item ao array items
     itens.push({
@@ -32,7 +33,7 @@ btnNew.onclick = () => {
     //Recarregando a lista de itens na tabela
     loadItens();
     //Limpando campos de entrada
-    descItem.value ="";
+    descItem.value = "";
     amount.value = "";
 };
 
