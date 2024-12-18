@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despesas</title>
+</head>
+<body>
+    <script>
+        //Adiciona um listener no documento para aguardar ele carregar
+        document.addEventListener('DOMContentLoaded', () => {
+            //Chama a função de verificarlogin quando a pagina for carregada
+            verificarLogin()
+        })
+
+        //Cria função para verificar seusuario esta logado
+        function verificarLogin() {
+            //Cria uma variavel com valor do usuario com valor localStorage
+            const usuario = localStorage.getItem('usuario')
+            //Chega se o usuario existe
+            if (usuario != null) {
+                window.location = '/Despesas/'
+            }
+            else {
+                window.location = '/Login'
+            }
+        }
+    </script>
+</body>
+</html>
