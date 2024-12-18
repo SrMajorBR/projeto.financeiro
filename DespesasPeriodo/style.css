@@ -1,0 +1,64 @@
+/*Reset de estilo padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    outline: none;
+}
+/*Estilo Geral para a pagina*/
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+/*Estilo geralpara seção principal*/
+main {
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Estilo para a barra de controle dos botões*/
+.controls {
+    display: flex;
+    width: 93%;
+    gap: 10px;
+    padding: 20px 0;
+}
+/*Estilo para os botões de controle*/
+.controls button {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px #ccc;
+    cursor: pointer;
+}
+/*Estilos para os botões de controle ao passar o mouse ou ativo*/
+.controls button:hover,
+.controls button:active {
+    background-color: #2C73D2;
+    color: white;
+}
+/*Estilo para as informaçoes do usuario*/
+.usuario {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.divTable {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    max-width: 300px;
+}
+
+table {
+    width: 98%;
+    padding: 20px 0;
+    border-radius: 5px;
+}
