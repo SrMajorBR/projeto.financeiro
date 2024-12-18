@@ -1,0 +1,174 @@
+/*Reset deestilos básicos para todos os elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    outline: none;
+}
+
+/*Estilos gerais para ocorpo da página*/
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+/*Estilo gerais para a seção principal*/
+main {
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Estilos para os botões de controle*/
+.controls button {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px #ccc;
+    cursor: pointer;
+}
+/*Estilos para os botões de controle ao passaro mouse ou quandoativos*/
+.controls button:houver, .controls button.active {
+    background-color: #2C73D2;
+    color: white;
+}
+/*Estilospara os painéis de conteúdo*/
+.painel {
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Estilos para o painel ativo*/
+.painel.active {
+    height: auto;
+}
+/*Estilo para o painel de despesas*/
+.painel.despesas {
+    display: flex;
+}
+/*Estilo para as informações do usuário*/
+.usuario {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+/*Estilo para resumo das finanças*/
+.resume {
+    display: flex;
+    padding: 10px 0;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Estilospara cadaite do resumo*/
+.resume > div {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+}
+/*Estilos para seção de adição de novos itens*/
+.newItem {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Estilos para o botão de inclusão de novo item*/
+.newItem > button {
+    background-color: #2C73D2;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 34px;
+}
+/*Estilos para campo de entrada*/
+input, select {
+    padding: 5px;
+}
+/*Estilo paratabelade exibição de despesas*/
+.divTable {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*Adição da barra de rolagem vertical*/
+    overflow-y: auto;/*Adiciona barra derolagem somente quando necessário*/
+    max-height: 300px;/*Define uma altura máxima para a div antes da rolagem aparecer*/
+}
+/*Estilo para a tabela*/
+table {
+    width: 98%;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+/*Estilos para cabeçalho da tabela*/
+th {
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom: 10px;
+}
+td {
+    padding: 2px 0 !important;
+    margin: 2px 0 !important;
+}
+i {
+    font-size: 25px;
+}
+/*Estilo para ícones de entrada*/
+.bxs-chevron-up-circle {
+    color: #ffffff;
+    background-color: #D83121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+}
+/*Estilo para ícones de saida*/
+;.bxs-chevron-down-circle {
+    color: #ffffff;
+    background-color: #00C9A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+}
+/*Estilos para a coluna de ação na tabela*/
+.columnAction {
+    width: 40px;
+    text-align: center;
+}
+/*Estilo para botões dentro da coluna ação*/
+.columnAction > button {
+    background: transparent;
+    border: none;
+}
+/*Estilopara a coluna de valor*/
+.columnAmount {
+    width: 30%;
+}
+/*Estilo para a coluna de tipo*/
+.columnType {
+    width: 80px;
+    text-align: center;
+}
+
+
+
+
