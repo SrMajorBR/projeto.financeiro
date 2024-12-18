@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Dados da Página-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título da Página-->
+    <title>Despesas</title>
+    <!--Carregamento do Estilo-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Controle do botões-->
+    <div class="controls">
+        <button id="btn1">Despesas</button>
+        <button id="btn2">Despesas Periodo</button>
+    </div>
+
+    <!--Painel de exibição de despesas-->
+    <div class="painel despesas active">
+
+        <div class="resume">
+            <div>
+                Entrada: R$ 
+                <span class="incomes">0.00</span>
+            </div>
+            <div>
+                Saídas: R$ 
+                <span class="expenses">0.00</span>
+            </div>
+            <div>
+                Total: R$ 
+                <span class="total">0.00</span>
+            </div>
+        </div>
+        <!--Formulário para adicionar novas depesas-->
+        <div class="newItem">
+            <div class="divDesc">
+                <label for="desc">Descrição</label>
+                <input type="text" id="desc" />
+            </div>
+            <div class="divAmount">
+                <label for="amount">Valor</label>
+                <input type="number" id="amount" />
+            </div>
+            <div class="divDate">
+                <label for="data">Data</label>
+                <input type="date" id="data" />
+            </div>
+            <div class="divType">
+                <label for="type">Tipo</label>
+                <select id="type">
+                    <option>Entrada</option>
+                    <option>Saída</option>
+                </select>
+            </div>
+            <button id="btnNew">Incluir</button>
+        </div>
+        <!--Tabela de exibição das despesas-->
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="columnDescription">Descrição</th>
+                        <th class="columnAmount">Valor</th>
+                        <th class="columnType">Tipo</th>
+                        <th class="columnDate">Data</th>
+                        <th class="columnAction"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <!--Informações do usuário-->
+        <div class="usuario">
+            <label id="nome-usuario">Usuario</label>
+            <button id="btn_sair">Sair</button>
+        </div>
+        
+    </div>
+    <!--Painel de exibição de despesas por período-->
+    <div class="painel periodo">
+        Filtar por período
+    </div>
+    <!--Carregamento do Script principal-->
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>
