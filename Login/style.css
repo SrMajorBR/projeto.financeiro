@@ -1,0 +1,75 @@
+/*Estilos gerais para o corpo da Página*/
+body {
+    background-color: #1B1F27;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+/*Estilos para a área de login*/
+.area-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilos para o container de login*/
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181920;
+    border-radius: 10px;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+}
+/*Estilos para o formulário de login*/
+.formulario {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+/*Estilos para campos de entrada*/
+.login input {
+    margin-top: 10px;
+    background-color: #252A34;
+    padding-left: 10px;
+    color: #cbd0f7;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+
+}
+/*Estilos para a imagem de logo*/
+.login img {
+    width: 65px;
+    height: auto;
+}
+/*Estilos para o texto de espaço reservado(placeholder) nos campos de entrada*/
+input::placeholder {
+    color: #CBD0F7;
+    font-size: 14px;
+
+}
+/*Estilos para o botão de envio do formulário*/
+.formulario [type="submit"] {
+    display: block;
+    background-color: #5568FE;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*Estilos para parágrafos*/
+p {
+    color: #CBD0F7;
+
+}
+/*Estilos para links*/
+a {
+    color: #5568FE;
+    text-decoration: none;
+    margin-left: 10px;
+}
