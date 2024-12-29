@@ -1,5 +1,5 @@
 const express = require('express');
-const Cliente = require('../models/Cliente');
+const Cliente = require('../backand/models/Cliente');
 const router = express.Router();
 
 //Rota para adicionar um novo cliente
